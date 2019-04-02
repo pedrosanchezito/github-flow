@@ -6,9 +6,29 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+
+    <style>
+
+        .jumbotron {
+            background-color: #D23333;
+            color: #FFFFFF;
+        }
+
+        #jumbo-image {
+            float: left;
+        }
+
+    </style>
+
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <img id="jumbo-image" src="data:image/png;base64,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">
+        <h1 class="display-4">Hello Wagon</h1>
+        <p class="lead">Do you like today's class ?</p>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
